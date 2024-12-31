@@ -11,11 +11,11 @@ import OneCourse from './components/OneCourse';
 
 // src/App.js
 import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Header />
             <Routes>
                 <Route path="/" element={<HomePage />} />
