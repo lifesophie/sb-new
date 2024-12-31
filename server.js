@@ -11,9 +11,12 @@ const port = process.env.PORT || 5175; // Используем переменн�
 app.use(express.json());
 app.use(cors());
 
+// Отдача статических файлов
+app.use(express.static(path.join(__dirname, 'build')));
+
 // Отдача статического HTML-контента для корневого URL
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.get('/api/type_course', async (req, res) => {
