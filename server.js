@@ -1,14 +1,20 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const db = require('./db'); // Импортируем файл конфигурации базы данных
 const { saveApplication } = require('./queries'); // Импортируем функцию для сохранения заявок
 const { sendNotification } = require('./bot'); // Импортируем функцию для отправки уведомлений в Telegram
 
 const app = express();
-const port = 5175; // Или любой другой порт, который не занят
+const port = process.env.PORT || 5175; // Используем переменную окружения для порта
 
 app.use(express.json());
 app.use(cors());
+
+// Отдача статического HTML-контента для корневого URL
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 app.get('/api/type_course', async (req, res) => {
     try {
