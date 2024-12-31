@@ -1,0 +1,55 @@
+.founder{
+    margin-top: 26px;
+    max-width: 1440px;
+    margin: 26px auto;
+}
+
+.photo{
+    padding-left: 60px;
+}
+
+.founder-container{
+    
+
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    gap: 30px;
+    max-width: 1440px;
+    
+    /* align-items: center; */
+    
+}
+
+h3{
+    font-size: 45px;
+    padding-top: 117px;
+}
+
+.expert{
+    font-size: 24px;
+    padding-top: 43px;
+}
+
+.sb-founder{
+    font-size: 23px;
+    padding-top: 10px;
+}
+
+.youtube{
+    display: grid;
+    grid-template-columns: repeat(2, 80px);
+}
+
+.icon-youtube img{
+    /* height: 100%;
+    width: 100%; */
+    padding-top: 43px;
+}
+
+.link-youtube{
+    font-size: 24px;
+    color: rgba(222, 38, 56, 1);
+    padding-top: 57px;
+    text-decoration: underline;
+    cursor: pointer;
+}

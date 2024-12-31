@@ -1,0 +1,58 @@
+.banner{
+    background-image: url('../assets/img/banner.png');
+
+    width: 99vw;
+    max-width: 1440px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+   
+
+    height: 445px;
+    margin-top: 26px;
+    
+}
+
+.text-banner{
+    color: rgba(61, 64, 59, 1);
+    font-size: 42px;
+    width: 700px;
+    /* padding-left: 60px; */
+    padding-top: 50px;
+    font-weight: 600;
+    margin-left: 140px;
+}
+.text-banner-red{
+    color: rgba(222, 38, 56, 0.87);
+    font-size: 42px;
+    width: 900px;
+    padding-top: 100px;
+    font-weight: 600;
+}
+
+.button-profi a{
+    color: rgba(242, 242, 242, 1);
+}
+
+.button-profi{
+    height: 60px;
+    width: 215px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    font-size: 15px;
+    color: rgba(242, 242, 242, 1);
+
+    margin-top: 13px;
+    padding: 15px 36px;
+    background-color: rgba(222, 38, 56, 1);
+    border: 1px solid rgba(61, 58, 93, 1);
+    cursor: pointer;
+    margin-left: 140px;
+    margin-top: 56px;
+}
+
+.button-profi:hover{
+    background-color: rgba(61, 58, 93, 1);
+    transition: 1s;
+}

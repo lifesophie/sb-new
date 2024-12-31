@@ -1,0 +1,87 @@
+.showhow{
+    margin: 30px auto;
+    max-width: 1440px;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(40, 23, 232, 1);
+    font-size: 40px;
+
+}
+
+.heading-showhow-lower h1{
+    text-align: center;
+    color: rgba(40, 23, 232, 1);
+    font-size: 32px;
+}
+
+.cable{
+    padding-left: 160px;
+    /* padding-top: 30px; */
+}
+
+.cable-1{
+    
+    margin-left: 0;
+    font-size: 24px;
+    font-weight: 500;
+   
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+.arrow-1{
+    padding-left: 900px;
+}
+
+.equipment{
+    padding-left: 160px;
+    padding-top: 30px;
+    /* display: flex; */
+}
+
+.equipment-1{
+    font-size: 24px;
+    font-weight: 500;
+   
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+.arrow-2{
+    padding-left: 1000px;
+}
+
+.ref{
+    padding-left: 160px;
+    padding-top: 30px;
+    /* display: flex; */
+}
+
+.ref-1{
+    font-size: 24px;
+    font-weight: 500;
+   
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+.arrow-3{
+    padding-left: 1100px;
+    padding-top: 10px;
+}
+
+.certificate{
+    padding-left: 160px;
+    /* padding-top: 20px; */
+    /* display: flex; */
+}
+
+.certificate-1{
+    font-size: 24px;
+    font-weight: 500;
+   
+    line-height: 50px;
+    padding-left: 30px;
+}

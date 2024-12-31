@@ -1,0 +1,132 @@
+.course-list {
+    max-width: 1440px;
+    margin-bottom: 30px;
+}
+
+.all-course {
+    display: grid;
+    grid-template-columns: 350px 1065px;
+}
+
+.sidebar-left {
+    margin-top: 45px;
+}
+
+.type-of-course-left {
+    height: 500px;
+}
+
+.header-course-one {
+    background-color: rgba(61, 58, 93, 1);
+    color: rgba(242, 242, 242, 1);
+    font-size: 18px;
+    padding: 20px 15px;
+    height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.course-one {
+    background-color: rgba(242, 242, 242, 1);
+    height: 60px;
+    margin-top: 2px;
+    cursor: pointer;
+    padding: 20px 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+.course-one .dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(242, 242, 242, 1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.course-one .dropdown li {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.course-one .dropdown li:hover {
+    background-color: rgba(61, 58, 93, 1);
+    color: rgba(242, 242, 242, 1);
+}
+
+.course-one:hover .dropdown {
+    display: block;
+}
+
+.documents-1 {
+    margin-top: 30px;
+}
+
+.one-document {
+    background-color: rgba(242, 242, 242, 1);
+    height: 108px;
+}
+
+.catalog-of-courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+.one-course {
+    background-color: rgba(217, 217, 217, 1);
+    height: 320px;
+    padding: 32px 32px;
+    width: 510px;
+}
+
+.header-of-card {
+    color: rgba(61, 58, 93, 1);
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 650;
+}
+
+.type-education {
+    margin-top: 24px;
+    font-weight: 500;
+}
+
+.long-education, .needed-level, .price {
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.button-more-courses {
+    width: 200px;
+    height: 47px;
+    background-color: rgba(61, 58, 93, 1);
+    color: rgba(242, 242, 242, 1);
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid rgba(61, 58, 93, 1);
+    cursor: pointer;
+}
+
+.button-more-courses:hover {
+    background-color: rgba(222, 38, 56, 0.87);
+    border: none;
+    transition: 1s;
+}
+
+.heading-container-content{
+    font-weight: 600;
+}
+
+.content-list{
+    padding-left: 52px;
+    padding-top: 32px;
+    font-size: 20px;
+    line-height: 40px;
+}

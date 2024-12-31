@@ -1,0 +1,69 @@
+.teachers{
+    margin: auto;
+    max-width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.disc-teachers{
+    text-align: center;
+    margin: auto;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 1200px;
+    padding-top: 15px;
+    
+}
+
+.techers-photo{
+    display: grid;
+    grid-template-columns: 410px 410px 410px;
+    max-width: 1440px;
+    
+    /* gap: 00px; */
+    margin: auto;
+    margin-top: 23px;
+}
+
+.egor, .vladimir, .sophia{
+    width: 360px;
+}
+
+
+.egor-photo{
+    background-image: url(../assets/img/zhuravlev.png);
+    width: 351px;
+    height: 351px;
+}
+
+.vladimir-photo{
+    background-image: url(../assets/img/vladimir.png);
+    width: 351px;
+    height: 351px;
+}
+
+.sophia-photo{
+    background-image: url(../assets/img/sophia.png);
+    width: 351px;
+    height: 351px;
+}
+
+.name{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.disc-name{
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+
+    color: rgba(0, 0, 0, 0.73);
+    font-size: 16px;
+    font-weight: 500;
+    width: 330px;
+}
+

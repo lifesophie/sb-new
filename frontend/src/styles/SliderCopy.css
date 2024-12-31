@@ -1,0 +1,44 @@
+.slider-copy {
+    position: relative;
+    max-width: 1440px; /* Ширина слайдера */
+    height: 550px;
+    overflow: hidden; /* Прячем выходящие за границы элементы */
+    margin: 0 auto;
+}
+
+.slider-container-copy {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Плавная анимация */
+}
+
+.slide-copy {
+    flex: 0 0 100%; /* Каждая картинка занимает всю ширину контейнера */
+    width: 100%;
+    height: 750px;
+}
+
+.slide-copy img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}

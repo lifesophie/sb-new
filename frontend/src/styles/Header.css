@@ -1,0 +1,203 @@
+.header{
+    position:relative;
+    /* top: 0; */
+    max-width: 1440px;
+    z-index: 999;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    margin: auto;
+    
+}
+
+
+
+/* ВЕРХНЯЯ ЧАСТЬ ШАПКИ */
+
+.header-upper{
+    position: relative;
+    /* top: 0; */
+    width: 100%;
+    /* z-index: 999; */
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 177px;
+    padding: 0 120px;
+}
+
+/* левая сторона с логотипом СБ */
+
+.logo-sb{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 180px;
+}
+
+.header-logosb-img{
+    height: 100px;
+}
+
+.desc-of-logo{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: rgba(40, 23, 232, 0.64);
+
+    line-height: 35px;
+    padding-top: 13px;
+    width: 550px;
+    /* margin-left: 60px; */
+
+    text-align: center;
+}
+
+
+/* правая сторона с логотипом КТИТС */
+
+.contact-info-ktits-logo{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 64px;
+}
+
+.phone-number{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    cursor: pointer;
+    color: rgba(222, 38, 56, 0.87);
+
+    line-height: 25px;
+    padding-top: 26px;
+}
+
+.button-application{
+    height: 50px;
+    width: 200px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    color: rgba(242, 242, 242, 1);
+
+    margin-top: 13px;
+    padding: 15px 36px;
+    background-color: rgba(222, 38, 56, 1);
+    border: 1px solid rgba(61, 58, 93, 1);
+    cursor: pointer;
+}
+
+.button-application:hover{
+    background-color: rgba(61, 58, 93, 1);
+    transition: 1s;
+}
+
+.header-logo-ktits{
+    height: 76px;
+    /* margin-right: 50px; */
+    line-height: 25px;
+}
+
+
+/* НИЖНЯЯ ЧАСТЬ ШАПКИ */
+
+.header-lower{
+    /* background-color: red; */
+    color: rgba(0, 0, 0, 0.73);
+    padding-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* выпадающее меню */
+
+.courses, .courses a, .school a, .contacts a{
+    color: rgba(0, 0, 0, 0.73);
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    font-size: 16px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.59);
+    
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgba(242, 242, 242, 1);
+    font-weight: 400;
+    border: 1px solid rgba(242, 242, 242, 1);
+
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: rgba(65, 65, 65, 1)
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.dropdown:hover .courses {
+    color: rgba(222, 38, 56, 0.87);
+}
+
+
+.school a:hover{
+    color: rgba(222, 38, 56, 0.87);
+}
+
+.contacts:hover{
+    color: rgba(222, 38, 56, 0.87);
+}
+
+.contacts a:hover{
+    color: rgba(222, 38, 56, 0.87);
+}
+
+.contacts:hover{
+    color: rgba(222, 38, 56, 0.87);
+}
+
+.contacts a:hover{
+    color: rgba(222, 38, 56, 0.87);
+}
+
+.courses:hover{
+    color: rgba(222, 38, 56, 0.87);
+}
+
+.courses a:hover{
+    color: rgba(222, 38, 56, 0.87);
+}
+

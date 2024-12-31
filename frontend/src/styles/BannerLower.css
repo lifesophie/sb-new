@@ -1,0 +1,65 @@
+.banner-lower{
+    background-image: url('../assets/img/BannerLower.png');
+
+    width: 99vw;
+    max-width: 1440px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
+    height: 445px;
+    margin: 23px auto;
+    
+}
+
+.text-upper-banner-lower{
+    color: rgba(0, 0, 0, 0.73);
+    font-size: 42px;
+    width: 900px;
+    /* padding-left: 120px; */
+    margin-left: 120px;
+    padding-top: 100px;
+    font-weight: 600;
+}
+
+.text-lower-bl{
+    color: rgba(0, 0, 0, 0.73);
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 42px;
+    width: 900px;
+    /* padding-left: 60px; */
+    margin-left: 120px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.text-color-bl{
+    padding-top: 10px;
+}
+
+.blue-text{
+    color: rgba(40, 23, 232, 0.8);
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 42px;
+    width: 900px;
+    padding-left: 120px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.red_text{
+    color: rgba(222, 38, 56, 0.87);
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 42px;
+    width: 900px;
+    
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+
+

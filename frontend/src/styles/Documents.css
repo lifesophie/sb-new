@@ -1,0 +1,12 @@
+.documents{
+    margin: 23px auto;
+    max-width: 1440px;
+}
+
+.future-slider{
+    background-color: rgba(217, 217, 217, 1);
+    max-width: 1440px;
+    height: 430px;
+    margin: auto;
+    margin-top: 23px;
+}

@@ -1,0 +1,104 @@
+.contacts-container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.contacts-container-in{
+    max-width: 1200px;
+    height: 618px;
+    margin: auto;
+    background-color: rgba(217, 217, 217, 1);
+    margin-bottom: 20px;
+}
+
+.heading-contacts{
+    color: rgba(61, 58, 93, 1);
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 32px;
+    padding-top: 28px;
+    text-transform: uppercase;
+
+    height: 87px;
+    border-bottom: 1px solid black;
+}
+
+.teachers-1{
+    margin: auto;
+    max-width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.disc-teachers{
+    text-align: center;
+    margin: auto;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 1200px;
+    padding-top: 15px;
+    
+}
+
+.heading-teachers-1{
+    margin-right: 20px;
+}
+
+.techers-photo-1{
+    display: grid;
+    grid-template-columns: 385px 410px 410px;
+    max-width: 1440px;
+    
+    /* gap: 00px; */
+    margin: auto;
+    margin-top: 23px;
+}
+
+.egor, .vladimir, .sophia{
+    width: 360px;
+}
+
+
+.egor-photo{
+    background-image: url(../assets/img/zhuravlev.png);
+    width: 351px;
+    height: 351px;
+}
+
+.vladimir-photo{
+    background-image: url(../assets/img/vladimir.png);
+    width: 351px;
+    height: 351px;
+}
+
+.sophia-photo{
+    background-image: url(../assets/img/sophia.png);
+    width: 351px;
+    height: 351px;
+}
+
+.name{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.disc-name{
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+
+    color: rgba(0, 0, 0, 0.73);
+    font-size: 16px;
+    font-weight: 500;
+    width: 330px;
+}
+
+.form-feedback{
+    margin-top: 29px;
+    margin-bottom: 39px;
+}
+
+
