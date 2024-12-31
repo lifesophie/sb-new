@@ -1,3 +1,4 @@
+// src/components/CourseList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../styles/CourseList.css';
@@ -12,7 +13,7 @@ function CourseList() {
     useEffect(() => {
         const fetchType1Courses = async () => {
             try {
-                const response = await axios.get('http://localhost:5175/api/type1_course');
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/type1_course`);
                 setType1Courses(response.data);
             } catch (error) {
                 console.error('Error fetching type1_course:', error);
@@ -21,7 +22,7 @@ function CourseList() {
 
         const fetchCourses = async () => {
             try {
-                const response = await axios.get('http://localhost:5175/api/courses');
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/courses`);
                 setCourses(response.data);
             } catch (error) {
                 console.error('Error fetching courses:', error);

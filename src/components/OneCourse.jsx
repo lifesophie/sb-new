@@ -1,3 +1,4 @@
+// src/components/OneCourse.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import '../styles/OneCourse.css'; // Подключаем стили
@@ -21,7 +22,7 @@ const OneCourse = () => {
     useEffect(() => {
         const fetchCourse = async () => {
             try {
-                const response = await axios.get(`http://localhost:5175/api/courses/${id}`);
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/courses/${id}`);
                 console.log('Fetched course:', response.data); // Проверяем данные курса
                 setCourse(response.data);
             } catch (error) {
@@ -31,7 +32,7 @@ const OneCourse = () => {
 
         const fetchType1Courses = async () => {
             try {
-                const response = await axios.get('http://localhost:5175/api/type1_course');
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/type1_course`);
                 console.log('Fetched type1 courses:', response.data); // Проверяем данные типов курсов
                 setType1Courses(response.data);
             } catch (error) {
@@ -62,7 +63,7 @@ const OneCourse = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5175/api/submit-application', {
+            await axios.post(`${process.env.REACT_APP_API_URL}/submit-application`, {
                 ...formData,
                 courseId: id,
                 courseName: course.name

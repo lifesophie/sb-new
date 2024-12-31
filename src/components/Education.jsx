@@ -1,3 +1,4 @@
+// src/components/Education.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import '../styles/Education.css'; // Подключаем стили
@@ -10,7 +11,7 @@ const Education = () => {
     useEffect(() => {
         const fetchCourses = async () => {
             try {
-                const response = await axios.get('http://localhost:5175/api/courses');
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/courses`);
                 if (Array.isArray(response.data)) {
                     setCourses(response.data.slice(0, 4)); // Получаем первые 4 курса
                 } else {

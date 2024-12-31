@@ -1,3 +1,4 @@
+// src/components/Course.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import '../styles/Course.css'; // Подключаем стили
@@ -10,7 +11,7 @@ const Course = () => {
     useEffect(() => {
         const fetchCourses = async () => {
             try {
-                const response = await axios.get('http://localhost:5175/api/type_course');
+                const response = await axios.get(`${process.env.REACT_APP_API_URL}/type_course`);
                 console.log('response.data', response.data); // <--- Проверяем response.data
 
                 if (Array.isArray(response.data)) {
@@ -20,6 +21,7 @@ const Course = () => {
                 }
             } catch (error) {
                 console.error('Error fetching courses:', error);
+                setError('Error fetching courses');
             }
         };
 
